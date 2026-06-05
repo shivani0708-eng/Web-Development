@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        nav {
+            height: 60vh;
+            background-color: blue;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column-reverse;
+            /*row column row-reverse column reverse* main axis(row) or cross axis (column)change hoti hai
+            justify-items row align-items column*/
+        }
+
+        div {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            display: inline-block;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </nav>
+
+</body>
+
+</html>

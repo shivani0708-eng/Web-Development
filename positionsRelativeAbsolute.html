@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: chartreuse;
+            margin: 10px;
+            width: 20vw;
+            height: 20vh;
+        }
+
+        div {
+            background-color: royalblue;
+            margin: 10px;
+            width: 20vw;
+            height: 20vh;
+        }
+
+        .grandparent {
+            position: relative;
+            /*relative apne according move hoga */
+            background-color: black;
+            top: 10px;
+            left: 20px;
+            width: 20vw;
+            height: 20vh;
+
+        }
+
+        .parent {
+            position: absolute;
+            /*absolute jo hai vo parent child ke according move hoga*/
+            background-color: yellow;
+            width: 20vw;
+            height: 20vh;
+            top: 10px;
+            left: 20px;
+
+        }
+
+        .child {
+            background-color: red;
+            top: 20px;
+            left: 100px;
+            position: relative;
+            width: 20vw;
+            height: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div></div>
+    <div></div> -->
+    <div class="grandparent"></div>
+    <div class="parent"></div>
+    <div class="child"></div>
+
+
+
+</body>
+
+</html>

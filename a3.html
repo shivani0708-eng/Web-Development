@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color:aqua;
+            height: 50px;
+            diplay:flex;
+            text-align:center;
+            line-height:50px;
+        }
+
+        .container{
+            background-color:red;
+            padding: 15px;
+            height:500px;
+            gap:10px;
+            position:relative;
+            margin-top:50px;
+        }
+
+        button{
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color:lightblue;
+            border:none;
+            border-radius:50px;
+
+        }
+        .box{
+           background:blueviolet;
+           display:flex;
+           justify-content:center;
+           align-items:center;
+           border-radius:10px;
+           font-size:20px;
+           position:relative;
+        }
+
+       .top{
+         grid-column:2;
+         grid-row:1;
+         position: absolute;
+        }
+
+       .left{
+         grid-column:1;
+         grid-row:2;
+         position:absolute;
+         left:10px;
+         bottom:10px;
+
+        }
+
+        .center{
+           position:absolute;
+           left:45%;
+           top:45%;
+       }
+
+        .right{
+          position:absolute;
+          right:20px;
+          top:20px;
+
+        }
+
+       .bottom{
+          position:absolute;
+          right:10px;
+          bottom:10px;
+       }
+    </style>
+</head>
+<body>
+    <nav> NAV BAR </nav>
+
+    <div class="container">
+        <button class="top">Home</button>
+        <button class="left">About</button>
+        <button class="center">Services</button>
+        <button class="right">Contact</button>
+        <button class="bottom">feedback</button>
+    </div>
+
+</body>
+</html>
+

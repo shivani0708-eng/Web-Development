@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        .parent {
+            border: 2px solid black;
+            padding: 40px 40px 40px 40px;
+            /*top-> right->bottom->left>*/
+            margin: 20px 20px 20px 20px;
+            text-align: center;
+
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin: auto;
+
+        }
+
+        .child:hover {
+            background-color: green;
+            /*us box par cursor layenge to color change hoga*/
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <! --padding content ke andar use hoti hai margin pading ke bahar suse hoti hai>
+        <div class="parent">
+            <div class="child">
+                hey new box model
+            </div>
+        </div>
+
+</body>
+
+</html>
