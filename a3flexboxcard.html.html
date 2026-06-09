@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Card Layout</title>
+    <style>
+     nav {
+        background-color: rgb(76, 74, 74);
+        text-align: center;
+        color: white;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 40px;
+      }
+
+      card {
+        /* border: 1px solid gray; */
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 17%;
+        padding: 15px;
+        box-shadow: -1px 1px 10px blue;
+        transition: transform 0.3s ease;
+      }
+
+      card:hover {
+        cursor: pointer;
+        transform: scale(1.05); /* 105% */
+      }
+
+      img {
+        height: 160px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        margin: 0;
+        color: rgb(105, 104, 104);
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 style="padding: 7px 0">FlexBox Card Layout</h1>
+    </nav>
+
+    <div>
+      <card>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsnCcupSJ74vHwlcLEJa5M7FdZOtIUdsFnJQ&s.jpg" alt="" />
+        <h3>Card 1 
+            Radha </h3>
+        <p>Symbol of pure love and devotion.</p>
+        </card>
+      <card>
+        <img src="https://cdn.dollsofindia.com/images/p/krishna-pictures/radha-krishna-poster-with-glitter-AS26_l.jpg" alt="" />
+        <h3>Card 2
+             Radhe Rani 2</h3>
+         <p>Divine bond of Radha and Krishna.</p>
+        </card>
+      <card>
+        <img src="https://bhajansangam.in/wp-content/uploads/2024/12/Parvat-Ki-Unchi-Chadhai-Re.jpg" alt="" />
+        <h3>Card 3 
+            shiv shakti </h3>
+        <p>Power and balance of Shiv Shakti.</p>
+        </card>
+        <card>
+        <img src="https://hindipath.com/wp-content/uploads/2022/10/jai-shri-mahakal.jpg" alt="" />
+        <h3>Card jayshree mahakal 4</h3>
+        <p>Lord Mahakal, the destroyer of negativity.</p
+        </card>
+        </div>
+  </body>
+</html>

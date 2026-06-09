@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      nav {
+        height: 60vh;
+        background-color: cyan;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        /* align-items: center; */
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        border: 2px solid red;
+        margin: 10px;
+        /* display: inline-block; */
+      }
+
+      .first {
+        flex-grow: 1;
+      }
+
+      .middle {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="first"></div>
+      <div></div>
+      <div class="middle"></div>
+      <div></div>
+      <div></div>
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+      <!-- <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div> -->
+    </nav>
+  </body>
+</html>
