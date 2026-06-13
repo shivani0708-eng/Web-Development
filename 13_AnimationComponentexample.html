@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation component</title>
+    <style>
+        .container{
+              width: 500px;
+              height:500px;
+              background-color:aqua;
+          
+        } 
+        .NavBar{
+            height:50px;
+            width:500px;
+            background-color:chartreuse;
+        }     
+          .ball{
+            width:50px;
+            height:50px;
+            background-color:darkblue;
+            border-radius:50%;
+            position:absolute;
+            left:50px;
+         
+            animation: Bounce 1s  ease-in-out infinite ;
+        }
+        @keyframes Bounce{
+            0%{
+               transform:translateX(0px) scale(1) ;
+                 
+            }
+            25%{
+               transform:translateX(400px) scale(1) ;
+            }
+
+            50%{
+                transform:translateY(450px) scale(1.5)  ;
+            }
+            75%{
+               transform:translateZ(500px) scale(1) ;
+            }
+            
+            100%{
+               transform:translateY(0px) scale(1);
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"> 
+    
+        <div class="NavBar">
+            <button class ="pulse-btn">Home</button>
+            <button>  Service</button>
+            <button>Contact</button>
+            <button>profile</button>
+            <button>Library</button>
+        </div>
+    
+        <div class="ball"></div>
+    </div>
+    
+</body>
+</html>

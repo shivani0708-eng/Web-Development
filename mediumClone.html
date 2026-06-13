@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medium Clone</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+.navbar{
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    border-bottom:1px solid #ddd;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    font-size:40px;
+    font-family:Georgia, serif;
+}
+
+.search-box{
+    display:flex;
+    align-items:center;
+    background:#f2f2f2;
+    padding:10px 15px;
+    border-radius:30px;
+    width:300px;
+}
+
+.search-box input{
+    border:none;
+    background:transparent;
+    outline:none;
+    margin-left:10px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+}
+
+.get-app{
+    background:black;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.profile{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#8da0ac;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    display:flex;
+}
+
+.left-sidebar{
+    width:15%;
+    border-right:1px solid #ddd;
+    padding:30px;
+    min-height:100vh;
+}
+
+.left-sidebar ul{
+    list-style:none;
+}
+
+.left-sidebar li{
+    padding:15px 25px;
+    display:flex;
+    gap:25px;
+    font: size 15px;
+    align-items:center;
+    
+ 
+}
+
+.content{
+    width:60%;
+    padding:25px 40px;
+}
+
+.tabs{
+    display:flex;
+    gap:30px;
+    margin-bottom:30px;
+    
+}
+.active{
+    border-bottom:2px solid black;
+    padding-bottom:10px;
+
+}
+
+.post{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 0;
+    border-bottom:1px solid #ddd;
+}
+.stats{
+    margin-top:20px;
+    color:#666;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div1{
+    display:flex;
+    gap:15px;
+}
+.div2{
+    display:flex;
+    gap:15px;
+}
+.post img{
+    width:200px;
+    height:120px;
+    object-fit:cover;
+    margin-left:50px;
+}
+.post-text{
+    width: 70%;
+}
+
+.post h2{
+    margin-bottom:20px;
+}
+.right-sidebar{
+    width:20%;
+    border-left:1px solid #ddd;
+    padding:30px;
+}
+
+.right-sidebar h4{
+    font-size:20px;
+    margin-bottom:25px;
+    text-transform: capitalize;
+}
+
+.pick{
+    margin-bottom:30px;
+}
+
+.pick small{
+    font-size:14px;
+    color:#666;
+}
+
+.pick h5{
+    font-size:28px;
+    line-height:1.4;
+    margin:10px 0;
+}
+
+.pick p{
+    font-size:14px;
+    color:#777;
+}
+
+.right-sidebar h5{
+    font-size:18px;
+    margin-top:40px;
+    margin-bottom:15px;
+}
+
+.topics button{
+    border:none;
+    background:#f2f2f2;
+    padding:10px 15px;
+    border-radius:25px;
+    margin:5px;
+    font-size:14px;
+}
+
+</style>
+</head>
+  <body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-bars"></i>
+            <h1 class="logo">Medium</h1>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <button class="get-app">Get app</button>
+            <i class="fa-regular fa-pen-to-square"></i>write
+            <i class="fa-regular fa-bell"></i>
+            <div class="profile">S</div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <div class="container">
+
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <ul>
+                <li><i class="fa-solid fa-house"></i> Home</li>
+                <li><i class="fa-regular fa-bookmark"></i> Library</li>
+                <li><i class="fa-regular fa-user"></i> Profile</li>
+                <li><i class="fa-regular fa-file-lines"></i> Stories</li>
+                <li><i class="fa-solid fa-chart-column"></i> Stats</li>
+            <br><hr></br>
+            
+                <li><i class="fa-solid fa-users"></i> Following</li>
+                <li><i class="fa-solid fa-plus"></i> Find writers and publications to follow</li><br>
+                 see suggestion
+            </ul>
+        </aside>
+
+        <!-- Center Content -->
+        <main class="content">
+
+            <div class="tabs">
+                
+                <span class="active">For you</span>
+                <span>Featured</span>
+            </div>
+
+            <div class="post">
+                <div class="post-text">
+                    <h2>If You Understand These 5 AI Terms, You're Ahead of 90% of People</h2>
+                    <p>Master the core ideas behind AI without getting lost</p>
+                    <div class="stats">
+                    <div>
+                        ⭐ &nbsp; 👏 8.3K 💬 1170 &nbsp; 🔁 217
+                    </div>
+                    <div class="div1">
+                        <i class="fa-regular fa-thumbs-down"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                </div>
+                <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*ELm800o6Kr9t7Fv_E6myzQ.png "alt="">
+            </div>
+
+            <div class="post">
+                <div class="post-text">
+                    <h2>How to Train Your Mind to Think Differently</h2>
+                    <p>Most people try to think harder. Intelligent people think better.</p>
+                     <div class="stats">
+                    <div>
+                        ⭐ &nbsp; 👏 6k 💬 328 &nbsp; 🔁 43
+                    </div>
+                    <div class="div2">
+                     <i class="fa-regular fa-thumbs-down"></i>
+                     <i class="fa-regular fa-bookmark"></i>
+                     <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                </div>
+                <img src="https://miro.medium.com/v2/resize:fit:1200/1*FW3L31qa3-V4zrzmlURHEg.png" alt="">
+            </div>
+
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+
+            <h4>staff picks</h4>
+                
+              <div class="pick">
+                   <small>KYO ▫️Tokyo</small>
+                   <h5>
+                     The carp files for Boys.
+                     The Doll sits for Girls.
+                   </h5>
+                   <p>June 4</p>
+              </div>
+
+              <div class="pick">
+                <small> devin bambrick</small>
+                <h5> Gaatori Fishing in America</h5>
+                <p> June 2</p>
+              </div>
+
+            <h5>Recommended topics</h5>
+
+            <div class="topics">
+                <button>Programming</button>
+                <button>Writing</button>
+                <button>Technology</button>
+                <button>Business</button>
+                <button>Data science</button>
+                <button>Python</button>
+            </div>
+
+        </aside>
+
+    </div>
+
+
+</body>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box{
+            width:200px;
+            height:200px;
+            background-color:darkblue;
+            /*animation-name:Shivani;
+            animation-iteration-count:3;
+            animation-duration:2s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;*/
+            animation:Shivani 3s ease-in-out infinite alternate;
+        }
+        @keyframes Shivani{
+            0%{
+                transform:translateX(0px) scale(1);
+                opacity: 1;
+            }
+            50%{
+                 transform: translate(200px) scale(1.5);
+                
+            }
+            100%{
+                 transform:translateX(400px) scale(1);
+                 opacity:0;
+             
+            }
+            to{
+                transform:translateX(200px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"> Box</div>
+    
+</body>
+</html>

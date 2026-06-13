@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform and Transition </title>
+    <style>
+        .container{
+            height:70vh;
+            width:50vw;
+            background-color:blue;
+        }
+        .box{
+            width:20%;
+            height:20%;
+            background-color:red;
+            color:yellow;
+           /* transform:rotate(45deg);*/
+           /* transform:translate (200px);*/  
+            /*transform:skew(20deg);*/
+           /* transform:scale(1.5);*/
+           /* transform:translateY(200px);*/
+           /* padding:20px;*/
+            /*margin:20px;*/
+            /* transition-property:transform;*/
+           /*transition-duration:3s;*/
+           /*transition-timing-function:ease-in-out;*/
+           /*transition: delay 1s;*/
+           /*transition:transform 2s ease-in-out 1s,background-color 2s;
+           /*transition:transform 2s ease-in-out 1s;*/
+           transition:
+                   all 2s ease,
+                  background-color 2s ease; 
+        }
+
+        .box:hover{
+            transform:scale(1.5);
+            background-color:green;
+            scale:1.5;
+            rotate:45deg;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+    
+</body>
+</html>
