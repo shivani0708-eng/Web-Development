@@ -1,4 +1,5 @@
 //clouser apne parent ke sath variable leke aata hai child me
+//outer variable ko store katrke rakhta hai
 // var a=10;
 // function parent(){
 //     let parentVar ="I am Parent";
